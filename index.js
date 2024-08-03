@@ -4,7 +4,7 @@ fetch('https://render-lfvp.onrender.com/students')
         let select = document.getElementById('select');
         data.forEach(st => {
             let opt = document.createElement('option');
-            opt.innerHTML=st.id;
+            opt.innerHTML=st.names;
             select.appendChild(opt);    
         });
       })
